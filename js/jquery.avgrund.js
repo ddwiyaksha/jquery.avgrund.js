@@ -82,6 +82,7 @@
 				body.bind('click', onDocumentClick);
 
 				body.addClass('avgrund-active');
+				body.css("overflow", "hidden");
 			}
 
 			// hide popup
@@ -90,6 +91,7 @@
 				body.unbind('click', onDocumentClick);
 
 				body.removeClass('avgrund-active');
+				body.css("overflow", "auto");				
 			}
 
 			// init on click or custom event
